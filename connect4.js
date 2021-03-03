@@ -163,17 +163,7 @@ class Game {
 
 class Player {
   constructor(color) {
-    if(this.isColor(color)){
       this.color = color;
-    } else {
-      alert('INVALID COLOR!')
-      throw new Error("INVALID COLOR");
-    }
-  }
-  isColor = (strColor) => {
-    const s = new Option().style;
-    s.color = strColor;
-    return s.color !== '';
   }
 }
 
@@ -181,4 +171,5 @@ document.getElementById('start-game').addEventListener('click', () => {
   let p1 = new Player(document.getElementById('p1-color').value);
   let p2 = new Player(document.getElementById('p2-color').value);
   new Game(p1, p2);
+  document.getElementById('game').style.display = 'flex';
 });  

@@ -6,6 +6,29 @@ body {
   z-index: 1;
 }
 
+#game {
+  width: 50vw;
+  height: 60vh;
+  border: solid 5vw rgb(192, 192, 192);
+  background-color: rgb(192, 192, 192);
+  box-shadow: 10px 10px 10px black;
+  border-radius: 10%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 10vh;
+  background-color: rgb(192, 192, 192);
+  border: solid 1vw rgb(192, 192, 192);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10%;
+}
 /* game board table */
 
 #board td {
@@ -31,4 +54,16 @@ body {
 
 #column-top td:hover {
   background-color: gold;
+}
+
+.color {
+  width: 10vw;
+  margin-bottom: 20px;
+}
+
+#start-game {
+  height: 5vh;
+  width: 20vw;
+  background-color: aqua;
+  margin-bottom: 3vh;
 }
